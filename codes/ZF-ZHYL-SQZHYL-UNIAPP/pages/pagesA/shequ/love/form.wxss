@@ -1,0 +1,56 @@
+/* pages/love/form.wxss */
+page
+{
+  background-color: #f6f6f6;
+}
+.cube
+{
+  margin: 20rpx 30rpx;
+  width: 690rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+.item
+{
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #f6f6f6;
+  height: 80rpx;
+  font-size: 28rpx;
+}
+.item input
+{
+  width: 470rpx;
+  font-size: 26rpx;
+}
+.item text
+{
+  opacity: 0;
+}
+.relpicker
+{
+  width: 460rpx !important;
+}
+
+.bombtn
+{
+  width: 580rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%);
+  border-radius: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  padding: 0;
+  border: none;
+}
+button::after
+{
+  border: none;
+}

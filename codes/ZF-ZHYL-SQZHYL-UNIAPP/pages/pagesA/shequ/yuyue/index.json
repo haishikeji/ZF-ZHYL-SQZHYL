@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "authorize": "/components/authorize/authorize"
+  },
+  "navigationBarTitleText": "预约服务"
+}

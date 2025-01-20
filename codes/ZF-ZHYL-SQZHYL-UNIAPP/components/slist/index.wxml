@@ -1,0 +1,16 @@
+<!--components/slist/index.wxml-->
+<wxs module="t" src="../../utils/tool.wxs" />
+<view class="list">
+  <block wx:for="{{array}}" wx:key="{{index}}">
+    <view class="listitem" bindtap="godetail" data-id="{{item.id}}">
+      <van-image width="240rpx" height="180rpx" lazy-load src="{{item.image}}" fit="cover" radius="10"/>
+      <view class="info">
+        <view class="f-30 f-400 over1">{{item.title || item.name}}</view>
+        <view class="f-26 {{date==true?'over2':'over3'}} m-t-10 richcon">
+          <rich-text nodes="{{item.content}}"></rich-text>
+        </view>
+        <view class="date m-t-20" wx:if="{{date}}" >{{t.jqStr(item.createTime,0,10)}}</view>
+      </view>
+    </view>
+  </block>
+</view>

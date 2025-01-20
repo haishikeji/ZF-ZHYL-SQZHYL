@@ -1,0 +1,15 @@
+<!--pages/funs/detail.wxml-->
+<import src="../../../../wxParse/wxParse"/>
+
+<wxs module="t" src="../../../../utils/tool.wxs" />
+<view class="topline"></view>
+<view class="page">
+  <view class="f-36 f-b align-c">{{detail.title || detail.name}}</view>
+  <view class="f-24 m-t-18 align-c">发布时间：{{t.jqStr(detail.createTime,0,10)}}</view>
+  <view class="m-t-30">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    <!-- <rich-text nodes="{{content}}"></rich-text> -->
+    </view>
+</view>
+
+<susbtn />

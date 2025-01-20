@@ -1,0 +1,41 @@
+/* pages/do/index.wxss */
+.topview
+{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.space
+{
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 20rpx;
+}
+.service
+{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.bom
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30rpx 0;
+  z-index: 10;
+}
+.bom .btn
+{
+  margin: 0 auto;
+  background: linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%), #C4C4C4;
+  border-radius: 40rpx;
+  width: 580rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+}

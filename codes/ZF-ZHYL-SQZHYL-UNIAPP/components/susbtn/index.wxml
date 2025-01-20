@@ -1,0 +1,5 @@
+<!--components/susbtn/index.wxml-->
+<view class="view" bindtap="getp_loc">
+  <image src="/pages/pagesA/images/sus.png"></image>
+</view>
+<authorize bind:onLoadFun='onLoadFun' isGoIndex='{{isGoIndex}}' iShidden="{{iShidden}}" isAuto="{{isAuto}}"></authorize>

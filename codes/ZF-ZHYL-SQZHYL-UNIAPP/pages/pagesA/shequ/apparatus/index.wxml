@@ -1,0 +1,61 @@
+<!--pages/pagesA/shequ/apparatus/index.wxml-->
+<view class="cube">
+  <view class="title">
+    <view class="line"></view>
+    <view class="name">善和智能手表：</view>
+  </view>
+  <view class="content">
+    绑定信息码：{{cardNo}}
+  </view>
+  <view wx:if="{{!cardNo}}" class="btn c-b" bindtap="showDialog" mark:type="cardNo">
+    绑定设备信息
+  </view>
+  <view wx:else class="btn c-r" bindtap="unBoundApp" mark:type="bloodCard">
+    解除绑定
+  </view>
+</view>
+
+<view class="cube">
+  <view class="title">
+    <view class="line"></view>
+    <view class="name">善和血糖仪：</view>
+  </view>
+  <view class="content">
+    绑定信息码：{{bloodCard}}
+  </view>
+  <view wx:if="{{!bloodCard}}" class="btn c-b" bindtap="showDialog" mark:type="bloodCard">
+    绑定设备信息
+  </view>
+  <view wx:else class="btn c-r" bindtap="deleteApp" bindtap="unBoundApp" mark:type="cardNo">
+    解除绑定
+  </view>
+</view>
+
+<van-dialog
+  use-slot
+  show="{{show}}"
+  showCancelButton
+  closeOnClickOverlay="{{true}}"
+  customStyle="border-radius: 30rpx; padding: 30rpx"
+  width="690rpx"
+  bind:confirm="boundApp"
+  bind:cancel="close"
+  bind:close="close"
+>
+  <view class="title">
+    绑定设备
+  </view>
+  <view class="dialog-info">
+    <van-field
+      label="设备码"
+      model:value="{{ value }}"
+      placeholder="请输入设备号"
+      border="{{ false }}"
+    />
+    <view class="scan-btn c-b" bindtap="scan">
+      扫码识别设备码
+    </view>
+  </view>
+</van-dialog>
+
+<van-dialog id="van-dialog" />

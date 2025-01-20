@@ -1,0 +1,41 @@
+/* components/titleview/index.wxss */
+
+.title
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ .title .left
+{
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.title .left .line
+{
+  background-color: #1AC99F;
+  width: 10rpx;
+  height: 32rpx;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+}
+ .title .right
+{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.name
+{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+}
+.subname
+{
+  font-size: 24rpx;
+  color: #999999;
+}

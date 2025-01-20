@@ -1,0 +1,153 @@
+/* pages/pagesA/shequ/myHealth/index.wxss */
+page {
+  background-color: #f6f6f6;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.cube {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title .left {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.title .line {
+  background-color: #1AC99F;
+  width: 10rpx;
+  height: 32rpx;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+}
+.title .name {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+}
+
+.title .right {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.item {
+  min-height: 80rpx;
+  border-top: 1rpx solid #f6f6f6;
+  display: flex;
+  align-items: center;
+}
+
+.item text {
+  opacity: 0;
+}
+
+
+.bigitem {
+  height: 134rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1rpx solid #f6f6f6;
+}
+
+.c-red {
+  color: #E8514E;
+}
+
+.c-orange {
+  color: #FD8E27;
+}
+
+.c-blue {
+  color: #17A4F3;
+}
+
+.f-s-40 {
+  font-size: 40rpx;
+}
+
+.w-l {
+  width: 236rpx;
+}
+
+.w-m {
+  width: 172rpx;
+  margin-right: 40rpx;
+}
+
+.address {
+  background: #F8F8F8;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  transform: translateY(-20rpx);
+}
+
+.icon-compass {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.footer-text {
+  padding: 0 65rpx;
+  width: 560rpx;
+  height: 100rpx;
+  font-weight: 300;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  color: #999999;
+  display: flex;
+}
+.refresh {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+.refresh .btn {
+  margin: 30rpx auto;
+  width: 600rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%), linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%);
+  border-radius: 60rpx;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+
+.map-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.map-box>.btn {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  z-index: 999;
+}

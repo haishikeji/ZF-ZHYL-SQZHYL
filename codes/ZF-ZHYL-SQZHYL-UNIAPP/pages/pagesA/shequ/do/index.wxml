@@ -1,0 +1,20 @@
+<!--pages/do/index.wxml-->
+<view class="topline"></view>
+<view class="topview">
+  <view class="f-30 f-b">服务说明</view>
+  <view class="f-28 m-t-20">为老年人代买生活用品、药品等必需品，聘请律师为居民提供
+免费法律咨询，为社区“三无”人员代办入院出院手续等。</view>
+</view>
+<view class="space"></view>
+<view class="service">
+  <titleview name="服务内容" right="{{false}}"/>
+  <slist array="{{list}}" date="{{false}}" type='1'/>
+</view>
+
+<view style="height:140rpx"></view>
+<view class="bom">
+  <view class="btn" bindtap="gopage" mark:url='./submit?type=2'>提交需求</view>
+</view>
+
+<authorize bind:onLoadFun='onLoadFun' isGoIndex='{{isGoIndex}}' iShidden="{{iShidden}}" isAuto="{{isAuto}}"></authorize>
+<susbtn />

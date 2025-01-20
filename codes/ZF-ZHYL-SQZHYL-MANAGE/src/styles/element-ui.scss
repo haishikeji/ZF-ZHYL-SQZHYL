@@ -1,0 +1,306 @@
+.el-dropdown-menu__item {
+  font-size: 12px !important;
+  line-height: 28px !important;
+}
+
+.el-card.is-always-shadow {
+  box-shadow: none;
+  border: none !important;
+}
+
+.el-scrollbar__view {
+  height: 100%;
+}
+
+.el-menu--horizontal {
+  border-bottom: none !important;
+}
+
+.el-menu {
+  border-right: none !important;
+}
+
+.el-menu--display,
+.el-menu--display + .el-submenu__icon-arrow {
+  display: none;
+}
+
+.el-dropdown-menu__item--divided:before,
+.el-menu,
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+  background-color: transparent;
+}
+
+.el-message__icon,
+.el-message__content {
+  display: inline-block;
+}
+
+.el-date-editor .el-range-input,
+.el-date-editor .el-range-separator {
+  height: auto;
+  overflow: hidden;
+}
+
+.el-dialog__wrapper {
+  z-index: 2048;
+}
+
+
+.el-col {
+  margin-bottom: 8px;
+}
+
+.el-main {
+  padding: 0 !important;
+}
+
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+  background-color: transparent !important;
+
+}
+.el-button--primary
+{
+  background-color: #1AAE70 !important;
+  border-color: #1AAE70 !important;
+}
+.el-button--text
+{
+  color: #1AAE70 !important;
+}
+.avue-tags .el-tabs--card > .el-tabs__header .el-tabs__item.is-active
+{
+  color: #1AAE70 !important;
+  border-bottom: 3px solid #1AAE70 !important;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active
+{
+  background-color: #1AAE70 !important;
+}
+.avue-sidebar .el-menu-item.is-active
+{
+  background-color: #fff !important;
+}
+
+
+.article
+{
+  display: flex;
+}
+.treeview
+{
+  width: 200px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-bottom: 8px;
+}
+.execution
+{
+  width: 100%;
+}
+
+.score-item
+{
+  display: flex;
+  align-items: center;
+  width: 52%;
+  margin-bottom: 10px;
+}
+.score-item1
+{
+  display: flex;
+  align-items: center;
+  width: 52%;
+  margin-bottom: 20px;
+}
+.title
+{
+  margin-bottom: 10px;
+}
+.score-item-name
+{
+  width: 100px;
+}
+.selfrecord .title
+{
+  margin-bottom: 20px;
+}
+
+.selfrecord .info
+{
+  margin-bottom: 20px;
+}
+.selfrecord .info div
+{
+  margin-bottom: 5px;
+}
+.bombtn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bombtn .pass
+{
+   width: 100px;
+   height: 30px;
+   background-color: #1AAE70;
+   color: #ffffff;
+   line-height: 30px;
+   border-radius: 5px;
+   text-align: center;
+   margin-right: 20px;
+}
+
+.bombtn .nopass
+{
+   width: 100px;
+   height: 30px;
+   background-color: red;
+   color: #ffffff;
+   line-height: 30px;
+   border-radius: 5px;
+   text-align: center;
+}
+
+
+
+.contain
+{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.topmenu
+{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topmenu-itme
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 396px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.topmenu-itme .itemtop
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing:border-box;
+}
+.topmenu-itme .itemtop .itemtop-l
+{
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.topmenu-itme .itemtop .itemtop-l img
+{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.topmenu-itme .itemline
+{
+  width: 250px;
+  // height: 100px;
+  margin-top: 20px;
+}
+ .num
+{
+  font-size: 32px;
+  color: #333333;
+  font-weight: bold;
+}
+ .title
+{
+  font-size: 16px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.bommenu
+{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bommenu-itme .info
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.bommenu-itme .info .num
+{
+  margin-top: 10px;
+}
+ .color1
+{
+  color: #33CCB6;
+}
+ .color2
+{
+  color: #FE4746;
+}
+ .color3
+{
+  // color: #3175FC;
+  color: #1AAE70;
+}
+ .color4
+{
+  color: #F67510;
+}
+
+.bommenu-itme
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 396px;
+  height:160px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.line
+{
+  width: 1px;
+  height: 50px;
+  background-color: rgb(211, 207, 207);
+  margin-left: 40px;
+  margin-right: 80px;
+}
+
+.tablebg
+{
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.tabletitle
+{
+  padding-left: 20px;
+  color: #333;
+  font-size: 16px;
+  // border-left: 4px solid #0456FD;
+  border-left: 4px solid #1AAE70;
+}

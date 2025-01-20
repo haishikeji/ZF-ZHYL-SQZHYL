@@ -1,0 +1,109 @@
+<!--pages/do/submit.wxml-->
+<view class="page">
+  <view class="cube">
+    <titleview name="服务类型" right="{{false}}"/>
+    <view class="typebody">
+      <!-- <view class="typeitem {{currtype==0?'active1':''}}" bindtap="typeclick" data-index="0">
+        <image src="{{currtype==0?'../../images/d_01.png':'../../images/d_1.png'}}" mode="widthFix"></image>
+        <view class="f-28">代买代办</view>
+      </view>
+      <view class="typeitem {{currtype==1?'active2':''}}" bindtap="typeclick" data-index="1">
+        <image src="{{currtype==1?'../../images/d_02.png':'../../images/d_2.png'}}" mode="widthFix"></image>
+        <view class="f-28">生活用品</view>
+      </view>
+      <view class="typeitem {{currtype==2?'active3':''}}" bindtap="typeclick" data-index="2">
+        <image src="{{currtype==2?'../../images/d_03.png':'../../images/d_3.png'}}" mode="widthFix"></image>
+        <view class="f-28">拿快递</view>
+      </view> -->
+
+      <block wx:for="{{list}}" wx:key='item'>
+        <view class="typeitem {{currtype==item.id?'active':''}}" bindtap="typeclick" data-index="{{item.id}}">
+          <image src="{{item.icon}}" mode="widthFix"></image>
+          <view class="f-28">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="cube">
+    <titleview name="需求说明" right="{{false}}"/>
+    <view class="line"></view>
+    <view class="txtbg">
+      <textarea placeholder="请输入您的需求" maxlength="200" bindinput="getneed" value="{{need}}"></textarea>
+      <view class="num f-22">{{need.length}}/200</view>
+    </view>
+  </view>
+
+  <view class="cube">
+    <titleview name="被服务人员" right="{{false}}"/>
+    <view class="flex-c daterow f-28" bindtap="showOldMan">
+      <input type="text" placeholder="请选择被服务人员" disabled="true" value="{{oldManName}}"/>
+      <van-icon name="arrow-down" color="#999999" size='30rpx'/>
+    </view>
+  </view>
+
+  <view class="cube">
+    <titleview name="最迟服务时间" right="{{false}}"/>
+    <view class="flex-c daterow f-28" bindtap="showpicker">
+      <input type="text" placeholder="请选择最迟服务时间" disabled="true" value="{{selecttime}}"/>
+      <van-icon name="arrow-down" color="#999999" size='30rpx'/>
+    </view>
+  </view>
+
+  <view class="cube">
+    <titleview name="您的位置" right="{{false}}"/>
+    <!--地图容器-->
+    <map id="myMap"
+      style="width:100%;height:400rpx;margin-top: 30rpx;"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}" scale="17" bindregionchange="mapChange">
+
+      <!-- <cover-view class="map-prompt hormap-prompt">您可拖动地图, 标记店铺准确位置</cover-view> -->
+      <cover-image class="current-site-icon horcurrent-site-icon" src="/pages/pagesA/images/my_marker.png"></cover-image>
+      <cover-image class="reload horreload" bindtap="reload" src="/pages/pagesA/images/pos.png">
+      </cover-image>
+    </map>
+
+    <view class="flex-c m-t-30" wx:if="{{currentRegion}}">
+      <van-icon name="location" color='#666' size='32rpx'/>
+      <view class="f-28 m-l-10">{{currentRegion}}</view>
+    </view>
+
+  </view>
+  <view class="bombtn" bindtap="submit">提交需求</view>
+
+</view>
+
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 560rpx"
+  bind:close="onClose"
+  close-on-click-overlay="false"
+>
+  <van-datetime-picker
+    type="datetime"
+    value="{{ currentDate }}"
+    min-date="{{ minDate }}"
+    max-date="{{ maxDate }}"
+    bind:confirm="confirm"
+    bind:cancel="cancel"
+  />
+</van-popup>
+
+<van-popup
+  show="{{ showOldMan }}"
+  position="bottom"
+  custom-style="height: 560rpx"
+  close-on-click-overlay="false"
+>
+  <van-picker
+    show-toolbar="{{true}}"
+    columns="{{ oldMan }}"
+    value-key="name"
+    bind:confirm="oldManConfirm"
+    bind:cancel="oldManCancel"
+  />
+</van-popup>
+
+<susbtn />

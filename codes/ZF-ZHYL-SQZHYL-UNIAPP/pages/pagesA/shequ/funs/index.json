@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "authorize": "/components/authorize/authorize"
+  },
+  "navigationBarTitleText": "功能室服务"
+}

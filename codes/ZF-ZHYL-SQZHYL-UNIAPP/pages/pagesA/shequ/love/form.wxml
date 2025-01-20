@@ -1,0 +1,64 @@
+<!--pages/love/form.wxml-->
+<form bindsubmit="submit">
+ <view class="cube">
+  <titleview name="老人信息" right="{{false}}"/>
+  <view class="item m-t-30">
+    <view>老人姓名：</view>
+    <input type="text" placeholder="请输入老人姓名" name='name'/>
+  </view>
+  <view class="item">
+    <view>身份证号：</view>
+    <input type="text" placeholder="请输入老人身份证号" name='idcard'/>
+  </view>
+  <view class="item">
+    <view>手<text class="f-22">1</text>机<text class="f-22">1</text>号：</view>
+    <input type="number" placeholder="请输入老人手机号" name='phone'/>
+  </view>
+ </view>
+ 
+ <view class="cube">
+  <titleview name="我的信息" right="{{false}}"/>
+  <view class="item m-t-30">
+    <view>我的姓名：</view>
+    <input type="text" placeholder="请输入您的姓名" name='mname' />
+  </view>
+  <view class="item">
+    <view>身份证号：</view>
+    <input type="text" placeholder="请输入您的身份证号" name='midcard'/>
+  </view>
+  <view class="item">
+    <view>手<text class="f-22">1</text>机<text class="f-22">1</text>号：</view>
+    <input type="number" placeholder="请输入您的手机号" name='mphone'/>
+  </view>
+  <view class="item">
+    <view>关<text>空空</text>系：</view>
+    <view class="flex-c" bindtap="showpicker">
+      <input type="text" placeholder="请选择您与老人的关系" disabled="true" class="relpicker" value="{{mrel}}"/>
+      <van-icon name="arrow" color="#999999" size='30rpx'/>
+    </view>
+  </view>
+ </view>
+
+ <button formType="submit" class="bombtn">提交</button>
+</form>
+ <van-popup
+  show="{{ show }}"
+  
+  position="bottom"
+  custom-style="height: 560rpx"
+  bind:close="onClose"
+  close-on-click-overlay="false"
+>
+<van-picker
+  show-toolbar
+  columns="{{ rels }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+/>
+
+</van-popup>
+
+
+
+
+<susbtn />

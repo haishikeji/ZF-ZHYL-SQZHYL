@@ -1,0 +1,43 @@
+/* pages/love/buyrecord.wxss */
+page
+{
+  background-color: #f6f6f6;
+}
+.page
+{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.bitem
+{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  padding-bottom: 30rpx;
+}
+.bitem .date
+{
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.stateimg
+{
+  position: absolute;
+  right: -5rpx;
+  top: -5rpx;
+  width: 65rpx;
+  height: 65rpx;
+}
+.desc
+{
+  width: 490rpx;
+}
+
+.nodata
+{
+  margin-top: 200rpx;
+}

@@ -1,0 +1,189 @@
+<!--pages/fiveg/card.wxml-->
+<view class="page">
+  <view class="cube" wx:if="{{userdetail}}">
+    <titleview name="个人基本信息" right="{{false}}"/>
+    <view class="item f-28 m-t-30">
+      <view>姓<text class="f-28">空</text><text class="f-28">空</text>名：</view>
+      <view>{{userdetail.name}}</view>
+    </view>
+    <view class="item f-28">
+      <view>姓<text class="f-28">空</text><text class="f-28">空</text>别：</view>
+      <view>{{userdetail.sex}}</view>
+    </view>
+    <view class="item f-28">
+      <view>年<text class="f-28">空</text><text class="f-28">空</text>龄：</view>
+      <view>{{userdetail.age}}</view>
+    </view>
+    <view class="item f-28">
+      <view>手<text class="f-24">1</text>机<text class="f-24">1</text>号：</view>
+      <view>{{userdetail.phone}}</view>
+    </view>
+    <view class="item f-28">
+      <view>居住地址：</view>
+      <view class="w">{{userdetail.address || ''}}</view>
+    </view>
+    <view class="item f-28">
+      <view>户籍地址：</view>
+      <view class="w">{{userdetail.permanentAddress || ''}}</view>
+    </view>
+    <view class="item f-28">
+      <view>所属街道：</view>
+      <view class="w">{{userdetail.street || ''}}</view>
+    </view>
+  </view>
+
+  <view class="cube" wx:if="{{detail}}">
+    <titleview name="个人健康特征" right="{{false}}"/>
+    <view class="item f-28 m-t-30">
+      <view>身<text class="f-28">空</text><text class="f-28">空</text>高：</view>
+      <view>{{detail.height}}</view>
+    </view>
+    <view class="item f-28">
+      <view>体<text class="f-28">空</text><text class="f-28">空</text>重：</view>
+      <view>{{detail.weight}}</view>
+    </view>
+    <view class="item f-28">
+      <view>体重指数：</view>
+      <view class="w">{{detail.bmi}}</view>
+    </view>
+    <view class="item f-28">
+      <view>高<text class="f-28">空</text><text class="f-28">空</text>压：</view>
+      <view>{{detail.bph}}</view>
+    </view>
+    <view class="item f-28">
+      <view>低<text class="f-28">空</text><text class="f-28">空</text>压：</view>
+      <view>{{detail.bpl}}</view>
+    </view>
+    <view class="item f-28">
+      <view>心<text class="f-28">空</text><text class="f-28">空</text>率：</view>
+      <view>{{detail.bpp}}</view>
+    </view>
+    <view class="item f-28">
+      <view>脂<text class="f-24">1</text>肪<text class="f-24">1</text>率：</view>
+      <view>{{detail.fattbfr}}</view>
+    </view>
+    <view class="item f-28">
+      <view>脂<text class="f-24">1</text>肪<text class="f-24">1</text>量：</view>
+      <view>{{detail.fatweight}}</view>
+    </view>
+    <view class="item f-28">
+      <view>基础代谢：</view>
+      <view class="w">{{detail.fatbmr}}</view>
+    </view>
+    <view class="item f-28">
+      <view>体水分率：</view>
+      <view class="w">{{detail.fattbwr}}</view>
+    </view>
+    <view class="item f-28">
+      <view>总<text class="f-24">1</text>水<text class="f-24">1</text>分：</view>
+      <view>{{detail.fatswt}}</view>
+    </view>
+    <view class="item f-28">
+      <view>去脂体重：</view>
+      <view class="w">{{detail.fatsffm}}</view>
+    </view>
+    <view class="item f-28">
+      <view>骨骼肌率：</view>
+      <view class="w">{{detail.fatsmr}}</view>
+    </view>
+    <view class="item f-28">
+      <view>蛋<text class="f-24">1</text>白<text class="f-24">1</text>质：</view>
+      <view>{{detail.fatsdbz}}</view>
+    </view>
+    <view class="item f-28">
+      <view>无<text class="f-24">1</text>机<text class="f-24">1</text>盐：</view>
+      <view>{{detail.fatswjy}}</view>
+    </view>
+    <view class="item f-28">
+      <view>内脏脂肪：</view>
+      <view class="w">{{detail.fatsvfi}}</view>
+    </view><view class="item f-28">
+      <view>骨矿含量：</view>
+      <view class="w">{{detail.fatsbmc}}</view>
+    </view>
+    <view class="item f-28">
+      <view>体<text class="f-28">空</text><text class="f-28">空</text>温：</view>
+      <view>{{detail.bt}}</view>
+    </view>
+    <view class="item f-28">
+      <view>血氧饱和度：</view>
+      <view class="w">{{detail.bo}}</view>
+    </view>
+
+  </view>
+
+  <!-- <view class="cube" wx:if="{{1>2}}">
+    <titleview name="监测记录" right="{{false}}"/>
+    <view class="bigitem m-t-30">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/yd.png" style="width:32rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">运动<text class="c-9 f-24">(步)</text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b">1528</view>
+        <view class="f-26 c-9">消耗23千卡</view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+    <view class="bigitem">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/tz.png" style="width:36rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">体重<text class="c-9 f-24">(kg)</text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b">50.5</view>
+        <view class="f-26 c-9">BMI 20.08</view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+    <view class="bigitem">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/xy.png" style="width:36rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">血压<text class="c-9 f-24">(mmHg)</text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b c-orange">140/105</view>
+        <view class="f-26 c-9">心率65次/分钟</view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+    <view class="bigitem">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/xt.png" style="width:36rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">血糖<text class="c-9 f-24">(mmol/L)</text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b">140</view>
+        <view class="f-26 c-9"></view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+    <view class="bigitem">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/ns.png" style="width:36rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">尿酸<text class="c-9 f-24">(mmol/L)</text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b c-red">0.11</view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+    <view class="bigitem">
+      <view class="flex-c w-l">
+        <image src="../../images/icon/xy1.png" style="width:36rpx;height:36rpx"></image>
+        <view class="f-28 m-l-10">血氧<text class="c-9 f-24"></text>：</view>
+      </view>
+      <view class="flex-r w-m">
+        <view class="f-30 f-b">94</view>
+      </view>
+      <view class="c-9 f-24">2021-12-01</view>
+    </view>
+  </view> -->
+
+</view>
+<view class="nodata" wx:if="{{!userdetail}}">
+    <van-empty class="custom-image" image="/pages/pagesA/images/empty/3.png" description="暂无健康档案哦~" />        
+  </view>
+
+
+<susbtn />

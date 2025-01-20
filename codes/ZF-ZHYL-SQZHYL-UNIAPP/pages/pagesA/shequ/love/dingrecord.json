@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "订餐记录",
+  "enablePullDownRefresh": true
+}

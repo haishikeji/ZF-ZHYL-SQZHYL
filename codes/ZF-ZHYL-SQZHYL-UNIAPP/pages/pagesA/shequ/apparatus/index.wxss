@@ -1,0 +1,66 @@
+/* pages/pagesA/shequ/apparatus/index.wxss */
+page {
+  background-color: #f6f6f6;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.cube {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.title .line {
+  background-color: #1AC99F;
+  width: 10rpx;
+  height: 32rpx;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+}
+
+.content {
+  padding: 0 10rpx;
+}
+
+.btn {
+  margin: 35rpx;
+  width: 560rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+
+.c-b {
+  background: linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%), linear-gradient(180deg, #0ED9AC 0%, #1AC89E 100%);
+}
+
+.c-r {
+  background: linear-gradient(270.47deg, #FF417A 0.41%, #FF6B4A 99.08%);
+}
+
+.scan-btn {
+  margin: 35rpx;
+  border-radius: 30rpx;
+  width: 560rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  text-align: center;
+  color: #fff;
+}

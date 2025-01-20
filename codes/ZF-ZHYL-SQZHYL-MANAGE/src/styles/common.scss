@@ -1,0 +1,150 @@
+// 全局变量
+@import './variables.scss';
+// ele样式覆盖
+@import './element-ui.scss';
+// 顶部右侧显示
+@import './top.scss';
+// 导航标签
+@import './tags.scss';
+// 工具类函数
+@import './mixin.scss';
+// 侧面导航栏
+@import './sidebar.scss';
+// 动画
+@import './animate/vue-transition.scss';
+//适配
+@import './media.scss';
+//通用配置
+@import './normalize.scss';
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+* {
+  outline: none;
+}
+
+// 关于 图标 CSS 的设置
+[class^="icon-"] {
+  font-family: "iconfont" !important;
+  /* 以下内容参照第三方图标库本身的规则 */
+  font-size: 18px !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.avue-input-icon__item i,
+.avue-crud__icon--small {
+  font-family: "iconfont" !important;
+  /* 以下内容参照第三方图标库本身的规则 */
+  font-size: 24px !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-menu-item [class^=icon-] {
+  margin-right: 5px;
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.el-submenu [class^=icon-] {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+// 自定义样式
+.pageBox {
+  font-size: 16px;
+  color: #333;
+  background: #F0F2F5;
+}
+
+.my-title {
+  font-size: 20px;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.my-title::before {
+  content: '';
+  width: 4px;
+  height: 18px;
+  // background: #0456FD;
+  background: #1AAE70;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-c-s {
+  display: flex;
+  align-items: center;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.mar-b-10 {
+  margin-bottom: 10px;
+}
+
+.mar-b-20 {
+  margin-bottom: 20px;
+}
+
+.mar-b-30 {
+  margin-bottom: 30px;
+}
+
+.myCard {
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+// 鼠标手势
+.pointer {
+  cursor: pointer;
+}

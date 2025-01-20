@@ -1,0 +1,22 @@
+<!--pages/fiveg/index.wxml-->
+<view class="topline"></view>
+<view class="page">
+  <van-image width="690rpx"  lazy-load src="{{detail.plotting}}" fit="widthFix" radius="10"/>
+  <view class="f-30 f-b m-t-30">{{name}}介绍</view>
+  <view class="desc">
+    <rich-text nodes="{{content}}"></rich-text>
+  </view>
+  <view class="bom" wx:if="{{type==1}}">
+    <!-- <view class="yybtn">预约检查</view> -->
+    <!-- <view class="cardbtn" bindtap="gopage" mark:url='../fiveg/card?id={{userinfo.id}}'>健康档案卡（我的/家人）</view> -->
+    <view class="cardbtn" wx:if="{{oldManId}}" bindtap="gopage" mark:url='../../../../pages/pagesA/shequ/myHealth/index?id={{oldManId}}'>我的健康状态 </view>
+  </view>
+</view>
+
+<!-- <view class="nodata" wx:if="{{detail.length==0}}">
+    <van-empty class="custom-image" image="/images/empty/3.png" description="暂无数据哦~" />
+  </view>      -->
+
+
+<authorize bind:onLoadFun='onLoadFun' isGoIndex='{{isGoIndex}}' iShidden="{{iShidden}}" isAuto="{{isAuto}}"></authorize>
+<susbtn />
